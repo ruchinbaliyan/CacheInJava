@@ -10,9 +10,9 @@ public class Test {
         System.out.println("enter cache size");
 
         int cacheSize = sc.nextInt();
-        // LeastFrequentlyUsedCache cache  = new LeastFrequentlyUsedCache(cacheSize);
+        LeastFrequentlyUsedCache cache  = new LeastFrequentlyUsedCache(cacheSize);
         // LFUusingPQ cache =new LFUusingPQ(cacheSize);
-        FirstInfirstOutCache cache =new FirstInfirstOutCache(cacheSize);
+        //FirstInfirstOutCache cache =new FirstInfirstOutCache(cacheSize);
         String className = cache.getClass().getSimpleName();
         System.out.println("Working with "+className);
 
