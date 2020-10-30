@@ -24,7 +24,7 @@ class SetExecution{
 
         while (true) {
             System.out.println();
-            System.out.println("1:addMultiple values  2:contain(value)?  3:remove(value) 4:clear 5:size 6:printValues  7:exit");
+            System.out.println("1:addMultiple values  2:contain(value)?  3:remove(value) 4:clear 5:size  6:printSet  7:exit");
               Integer value;
 
             int choice = sc.nextInt();
