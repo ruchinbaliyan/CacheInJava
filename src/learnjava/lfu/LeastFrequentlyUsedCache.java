@@ -3,6 +3,13 @@ package learnjava.lfu;
 import java.util.HashMap;
 import java.util.Map;
 
+class valueNotFoundExecption extends  Exception{
+    public valueNotFoundExecption(String s)
+    {
+        super(s);
+
+    }
+}
 public class LeastFrequentlyUsedCache implements Cache {
     int cacheSize=0;
     private Node front;
@@ -18,10 +25,18 @@ public class LeastFrequentlyUsedCache implements Cache {
 
     public long getValue(long key)
     {
+        try{
         if( map.get(key) == null)
         {
-            return -1;
+            throw new valueNotFoundExecption("No values found");
         }
+    }
+    catch(valueNotFoundExecption ex){
+        System.out.println(ex.getMessage());
+        return -1;
+
+
+    }
         Node node = map.get(key);
         removeNode(node);
         node.frequency +=1;
