@@ -24,10 +24,7 @@ public class Test {
                 case 1:
                     System.out.println("Enter key");
                     key = sc.nextLong();
-                    if(cache.getValue(key)!=-1)
-                        System.out.println(cache.getValue(key));
-
-
+                    System.out.println(cache.getValue(key));
                     break;
 
 

@@ -14,9 +14,10 @@ class ItemNotfoundException extends Exception
 
 
 public class LeastFrequentlyUsedCache implements Cache {
-    int cacheSize=0;
-    private Node front;
-    private  Node back;
+    int cacheSize;
+    Node front;
+    Node back;
+
     private  Map<Long,Node> map = null;
 
 
