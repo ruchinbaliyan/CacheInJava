@@ -14,12 +14,12 @@ public class Demo {
         switch(choice)
         {
             case 1:
-                Maps m =new Maps();
+                Maps map =new Maps();
                 break;
 
 
             case 2:
-                Sets s =new Sets();
+                Sets set =new Sets();
                 break;
 
             case 3:

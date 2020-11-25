@@ -24,7 +24,7 @@ class Execution{
 
         while (true) {
             System.out.println();
-            System.out.println("1:put(k,v) 2:get(key) 3:remove(key) 4:clear 5:PrintAll 6:printkeys  7:exit");
+            System.out.println("1:Put(k,v) 2:Get(key) 3:Remove(key) 4:clear 5:PrintAll 6:printkeys  7:exit");
             Integer key;
             Integer value;
 

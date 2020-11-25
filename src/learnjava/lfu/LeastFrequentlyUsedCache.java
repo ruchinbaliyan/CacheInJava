@@ -3,10 +3,21 @@ package learnjava.lfu;
 import java.util.HashMap;
 import java.util.Map;
 
+class ItemNotfoundException extends Exception
+{
+    public ItemNotfoundException(String s)
+    {
+        // Call constructor of parent Exception
+        super(s);
+    }
+}
+
+
 public class LeastFrequentlyUsedCache implements Cache {
-    int cacheSize=0;
-    private Node front;
-    private  Node back;
+    int cacheSize;
+    Node front;
+    Node back;
+
     private  Map<Long,Node> map = null;
 
 
@@ -17,11 +28,21 @@ public class LeastFrequentlyUsedCache implements Cache {
     }
 
     public long getValue(long key)
+    {   try
     {
         if( map.get(key) == null)
         {
-            return -1;
+            throw new ItemNotfoundException("item is not present ");
         }
+    }
+    catch(ItemNotfoundException ex)
+    {
+        System.out.println(ex.getMessage());
+        return -1;
+
+    }
+
+
         Node node = map.get(key);
         removeNode(node);
         node.frequency +=1;
