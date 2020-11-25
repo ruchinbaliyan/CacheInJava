@@ -9,7 +9,6 @@ public class ImplStack {
     {
         return A.size();
     }
-
     public void  push(int i) {
         A.add(i);
     }
