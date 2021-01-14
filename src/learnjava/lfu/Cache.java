@@ -2,9 +2,11 @@ package learnjava.lfu;
 
 public interface Cache {
 
-    public long getValue(long key);
-    public void putValue(long key,long value);
-    public int getCurrentCacheSize();
-    public int getCacheSize();
+     long getValue(long key);
+     void putValue(long key,long value);
+     int getCurrentCacheSize();
+     int getCacheSize();
+     boolean isCacheEmpty();
+
 
 }

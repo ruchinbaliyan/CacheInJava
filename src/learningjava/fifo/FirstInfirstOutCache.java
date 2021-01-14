@@ -106,6 +106,11 @@ public class FirstInfirstOutCache implements Cache {
         public int getCacheSize() {
             return cacheSize;
         }
+
+    @Override
+    public boolean isCacheEmpty() {
+        return cacheSize==0;
     }
+}
 
 

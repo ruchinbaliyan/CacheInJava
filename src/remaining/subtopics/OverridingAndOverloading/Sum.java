@@ -1,6 +1,6 @@
-package remaining.subtopics;
+package remaining.subtopics.OverridingAndOverloading;
 
- public class Sum {
+public class Sum {
 
     public int sum(int x, int y) {
         return (x + y);
