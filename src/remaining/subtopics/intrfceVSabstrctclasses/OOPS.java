@@ -10,12 +10,11 @@ interface AdditonalOffers{
 
 
  abstract class  Cars{
-
      public abstract double price();
      public abstract int getTotalSeat();
      public abstract String colors();
 
-     public String Wheel()
+     public String wheel()
      {
          return "4 wheeler";
      }

@@ -1,11 +1,9 @@
 package JunitTests;
 
 import learnjava.lfu.LeastFrequentlyUsedCache;
-import org.junit.*;
+import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-
 
 public class TestLeastFrequentlyUsedCache {
 
@@ -50,6 +48,7 @@ public class TestLeastFrequentlyUsedCache {
     assertEquals(0,cache.getCurrentCacheSize());
 
 }
+
 
 
 
